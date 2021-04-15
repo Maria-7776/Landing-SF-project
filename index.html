@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
 	<header class="header">
 		<div class="container header-content">
 			<div class="logo">
@@ -30,19 +31,22 @@
 			<button class="button header-button">request a call</button>
 		</div>
 	</header>
+
 	<main>
+
 		<section class="first-screen">
-			<div class="container first-screen-container">
-				<h1 class="title first-screen-title">
+			<div class="container">
+				<div class="first-screen-container">
+					<h1 class="title first-screen-title">
 						Turnkey Repair in the<br>city of <span class="colortext">Rostov-on-Don</span>
-				</h1>
-				<p class="text first-screen-text">Get ready-made turnkey repairs on time <br>
+					</h1>
+					<p class="text first-screen-text">Get ready-made turnkey repairs on time <br>
 						with work time saving up to 45 days and 20% from <br>	
 						cost of materials due to the organization of work</p>
 				
-				<button class="button first-screen-button">Calculate the cost</button>
-				<button class="button first-screen-button">Submit your application</button>
-				
+					<button class="button first-screen-button">Calculate the cost</button>
+					<button class="button first-screen-button">Submit your application</button>
+				</div>
 			</div>
 			<div class="first-screen-overlay"></div>
 		</section>
@@ -50,7 +54,7 @@
 		
 		<section class="projects">
 			<div class="container">
-				<div class="container projects-container">
+				<div class="projects-container">
 					<div class="project-examples">
 						<h1 class="title projects-title"> Completed <br> projects</h1>
 						<p class="text text-projects">Only a small part of the work performed by our company is presented on the site. For 14 years on in the construction market we have made happy more than 1000 families</p>
@@ -87,15 +91,12 @@
 						</div>
 						
 					</div>
-					<div class="project-cities-wrapper">
-						<div class="project-cities">
-							<ul class="project-cities-list">
-								<li class="project-cities-list_item"><a href="#">rostov-on-don, admiral</a></li>
-								<li class="project-cities-list_item"><a href="#">sochi, thieves</a></li>
-								<li class="project-cities-list_item"><a href="#">rostov-on-don patriotic</a></li>
-							</ul>
-
-						</div>
+					<div class="project-examples">
+						<ul class="project-cities-list">
+							<li class="project-cities-list_item"><a href="#">rostov-on-don, admiral</a></li>
+							<li class="project-cities-list_item"><a href="#">sochi, thieves</a></li>
+							<li class="project-cities-list_item"><a href="#">rostov-on-don patriotic</a></li>
+						</ul>						
 						<div class="project-image"></div>
 					</div>
 					<div class="projects-mobile-wrapper">
@@ -138,12 +139,14 @@
 			<div class="container">
 				<div class="control-wrapper">
 					<h2 class="title control-title">online control</h2>
-					<div class="control-vector">
-						<div class="control-vector1"></div>
+					<div class="control-vector">						
 					</div>
 					<div class="control-image">
 						<div class="first-screen-overlay"></div>
-						<button class="button play"></button>
+						<img class="play" src="img/play.svg" alt="">
+
+					</div>
+						
 					</div>
 					<p class="control-text">
 						At each facility, a camera is installed that broadcasts the progress of work on the clock. At any time, you can go to our website and monitor the progress of work in your apartment. You can watch the live broadcast from one of our facilities! Leave a request below and you will receive a link to the broadcast.
@@ -158,11 +161,12 @@
 							<label>Phone</label>
 						</div>
 						<input type="submit" class="button" value="submit">
-
-					</form>
-					<div class="input-table_1">
-						<input type="checkbox" class="checkbox1" name="agreement" id="agreemen" value="yes">
+						<input type="checkbox" class="checkbox1" name="agreement" id="agreement" value="yes">
 						<label for="agreement" readonly>I agree to the processing of personal data</label>
+					</form>
+					
+						
+
 					</div>		
 						
 
@@ -170,12 +174,13 @@
 			</div>
 			
 		</section>
+
+
 		<section class="repair_types">
 			<div class="container">
 				<div class="repair-container">
 					<h2 class="title repair-title">types of repair</h2>
-					<div class="repair-vector">
-						<div class="repair-vector1"></div>
+					<div class="repair-vector">						
 					</div>
 				</div>
 			</div>
@@ -262,7 +267,7 @@
 								<div class="repair-input-table">
 									<input type="text" class="repair-input-table_item" placeholder="Your email:" required> <label>Email</label>
 								</div>
-								<input type="checkbox" class="checkbox1 repair-checkbox" name="agreement" id="repair-agreemen" value="yes">
+								<input type="checkbox" class="checkbox1 repair-checkbox" name="agreement" id="repair-agreement" value="yes">
 								<label for="repair-agreement" readonly>I agree to the processing of personal data</label>
 								<input type="submit" class="button" value="Call the measurer">
 							</form>
@@ -275,6 +280,8 @@
 					</div>
 			
 		</section>
+
+
 		<section class="styles">
 			<div class="container1">
 				<div class="styles-container">
@@ -391,22 +398,25 @@
 			
 				<div class="footer-container">
 					<div class="footer-form">
-						<h3 class="title footer-title">have any questions?</h3>
+						<h3 class="title control-title footer-title">have any questions?</h3>
 						<form class="input repair-input footer-input">
 							<div class="footer-input-wrapper">
 								<div class="repair-input-table footer-input-table">
-									<input type="text" class="repair-input-table_item footer-input-table_item" placeholder="What is your name:" required> <label>Name</label>
+									<input type="text" class="repair-input-table_item footer-input-table_item" placeholder="What is your name:" required> 
+									<label>Name</label>
 								</div>
 								<div class="repair-input-table footer-input-table">
-								<input type="text" class="repair-input-table_item footer-input-table_item" placeholder="Your phone number:" required> <label>Phone</label>
+								<input type="text" class="repair-input-table_item footer-input-table_item" placeholder="Your phone number:" required> 
+								<label>Phone</label>
 								</div>
 							</div>
 							<div class="footer-input-wrapper">
-								<div class="repair-input-table footer-input-table question">
-									<input type="text" class="repair-input-table_item footer-input-table_item" placeholder="I want to know:" required> <label>Question</label>
+								<div class="repair-input-table footer-input-table">
+									<input type="text" class="repair-input-table_item footer-input-table_item" id="question" placeholder="I want to know:" required>
+									<label>Question</label>
 								</div>							
 							</div>
-							<input type="checkbox" class="checkbox1 repair-checkbox footer-checkbox" name="agreement" id="footer-agreemen" value="yes">
+							<input type="checkbox" class="checkbox1 repair-checkbox footer-checkbox" name="agreement" id="footer-agreement" value="yes">
 							<label for="footer-agreement" readonly>I agree to the processing of personal data</label>
 							<input type="submit" class="button" value="submit">
 						</form>
@@ -419,11 +429,12 @@
 						<a href=""><div class="contact-details_item instagram"></div></a>
 					</div>
 					<div class="map">
-						<iframe src="img/map_group.png" frameborder="0"></iframe>
+						<img src="img/map.png" alt="map" class=map-img>
 					</div>	
+					
 						
 				</div>
-				<div class="first-screen-overlay"></div>
+				<div class="styles-overlay"></div>
 			
 		</div>
 			
@@ -456,3 +467,6 @@
 
 							
 </body>
+
+
+
